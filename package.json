@@ -1,5 +1,5 @@
 {
-  "name": "cerebro-system-settings",
+  "name": "cerebro-linux-system-settings",
   "version": "0.0.1",
   "description": "Simple Cerebro plugin to directly access linux system settings",
   "license": "MIT",
@@ -13,24 +13,20 @@
     "node": ">=4"
   },
   "scripts": {
-    "build": "webpack && babili dist -d dist --compact --no-comments",
-    "debug": "./scripts/debug",
-    "prepublish": "rm -rf ./dist && npm run build"
+    "start": "cerebro-scripts start",
+    "build": "cerebro-scripts build",
+    "test": "cerebro-scripts test"
   },
   "main": "dist/index.js",
   "keywords": [
-    "cerebro"
+    "cerebro",
+    "cerebro-plugin"
   ],
+  "dependencies": {
+    "cerebro-tools": "^0.1.8",
+    "cerebro-ui": "^0.0.16"
+  },
   "devDependencies": {
-    "babel-cli": "^6.18.0",
-    "babel-loader": "^6.2.8",
-    "babel-plugin-syntax-jsx": "^6.18.0",
-    "babel-plugin-transform-react-jsx": "^6.8.0",
-    "babili": "0.0.9",
-    "cerebro-tools": "^0.1.0",
-    "css-loader": "^0.26.0",
-    "react": "^15.4.1",
-    "style-loader": "^0.13.1",
-    "webpack": "2.1.0-beta.27"
+    "cerebro-scripts": "0.0.19"
   }
 }

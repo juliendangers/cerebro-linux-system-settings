@@ -1,4 +1,8 @@
-# cerebro-system-settings
+# cerebro-linux-system-settings
+
+Shortcut to specific system settings.
+
+Currently supports Gnome 3, any PR to add support for KDE, Unity, ... is welcomed ;)
 
 ## Usage
 In Cerebro, simply enter one of the following commands and press `Enter` to execute it.
