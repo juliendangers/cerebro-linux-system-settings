@@ -1,7 +1,7 @@
 {
   "name": "cerebro-linux-system-settings",
-  "version": "0.0.1",
-  "description": "Simple Cerebro plugin to directly access linux system settings",
+  "version": "0.0.2",
+  "description": "Direct access to linux system settings (Supports: Gnome3)",
   "license": "MIT",
   "repository": "juliendangers/cerebro-linux-system-settings",
   "author": {
@@ -15,7 +15,8 @@
   "scripts": {
     "start": "cerebro-scripts start",
     "build": "cerebro-scripts build",
-    "test": "cerebro-scripts test"
+    "test": "cerebro-scripts test",
+    "prepublish": "rimraf ./dist && npm run build"
   },
   "main": "dist/index.js",
   "keywords": [
@@ -27,6 +28,7 @@
     "cerebro-ui": "^0.0.16"
   },
   "devDependencies": {
-    "cerebro-scripts": "0.0.19"
+    "cerebro-scripts": "0.0.19",
+    "rimraf": "^2.6.1"
   }
 }
