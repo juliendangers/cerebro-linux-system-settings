@@ -1,6 +1,6 @@
 {
   "name": "cerebro-linux-system-settings",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Direct access to linux system settings (Supports: Gnome3)",
   "license": "MIT",
   "repository": "juliendangers/cerebro-linux-system-settings",

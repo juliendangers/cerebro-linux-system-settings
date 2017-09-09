@@ -1,5 +1,6 @@
 src
 .babelrc
+.idea
 node_modules
 scripts
 screenshot.png
